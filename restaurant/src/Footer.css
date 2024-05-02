@@ -1,0 +1,33 @@
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #F0E68C;
+    border-top: 1px solid #dee2e6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+.social {
+    color: #f39d03  ;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social:hover {
+    color: #F0E68C;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

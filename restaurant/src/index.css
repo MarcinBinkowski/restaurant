@@ -1,0 +1,44 @@
+body {
+    background-image: url('./assets/images/background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+@media (max-width: 7in) {
+    body {
+        background-size: auto;
+    }
+}
+.main-content {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+
+    /*margin: auto;*/
+}
+
+.restaurant-image {
+    width: 50vw;
+    height: 50vw;
+    margin-right: 20px;
+}
+
+.custom-paragraph {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+    .custom-paragraph {
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .custom-paragraph {
+        font-size: 12px;
+    }
+}
+@media (max-width: 5in) {
+    .custom-paragraph {
+        font-size: 10px;
+    }
+}
