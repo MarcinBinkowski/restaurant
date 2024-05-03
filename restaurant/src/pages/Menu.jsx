@@ -1,12 +1,10 @@
 import React from 'react';
-import Layout from "./Layout.jsx";
+import Layout from "../components/Layout.jsx";
 
 
 function Menu() {
     return (
-        <Layout>
-          Menu
-        </Layout>
+          "Menu"
     );
 }
 

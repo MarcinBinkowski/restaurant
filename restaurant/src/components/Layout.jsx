@@ -1,7 +1,6 @@
-import React from 'react';
-import Navigation from './Navigation';
+import Navigation from '../pages/Navigation.jsx';
 import Footer from './Footer';
-import '../index.css';
+import '../assets/styles/index.css';
 import {Col, Container, Image, Row} from "react-bootstrap";
 import restaurantImage from "../assets/images/billssteak.png";
 
@@ -9,9 +8,9 @@ const Layout = ({ children }) => {
     return (
         <>
             <Navigation />
-            <Container className="d-flex main-content">
+            <Container className="main-content">
                 <Row >
-                    <Col className="d-flex main-content">
+                    <Col className="main-content">
                         <Image src={restaurantImage} alt="Restaurant" className="restaurant-image" fluid={true}/>
                     </Col>
                     <Col className="d-flex main-content">

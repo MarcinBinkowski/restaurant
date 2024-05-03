@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
-import '../Footer.css';
+import '../assets/styles/Footer.css';
 
 function Footer() {
     return (
@@ -19,10 +19,10 @@ function Footer() {
             </Row>
             <Row>
                 <Col className="text-center py-3">
-                    <a href="https://www.facebook.com/bills-steak-house" className="facebook social">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="facebook social">
                         <FontAwesomeIcon icon={faFacebook} size="2x"/>
                     </a>
-                    <a href="https://www.instagram.com/bills-steak-house" className="instagram social">
+                    <a href="https://www.youtube.com/watch?v=y6120QOlsfU&ab_channel=Darude" className="instagram social">
                         <FontAwesomeIcon icon={faInstagram} size="2x"/>
                     </a>
                 </Col>

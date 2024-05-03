@@ -5,7 +5,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import "./index.css";
+import "./assets/styles/index.css";
 import App from "./App.jsx";
 
 

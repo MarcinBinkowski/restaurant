@@ -1,34 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
 import 'bootstrap';
-import Menu from "./components/Menu.jsx";
-import HomePage from "./components/HomePage.jsx";
-import Reservation from "./components/Reservation.jsx";
-import Contact from "./components/Contact.jsx";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import "./index.css"
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import "./assets/styles/index.css"
+import Layout from "./components/Layout.jsx";
+import { routes } from "./router.jsx";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <HomePage />,
-    },
-    {
-        path: "/menu",
-        element: <Menu />
-    },
-    {
-        path: "/reservation",
-        element: <Reservation />,
-    },
-    {
-        path: "/contact",
-        element: <Contact />,
-    },
-]);
 
 function App() {
-    return <RouterProvider router={router} />;
+    return (
+        <BrowserRouter>
+            <Layout>
+            <Routes>
+                {routes.map((route) => {
+                    return (
+                        <Route key={route.path} path={route.path} element={route.element} />
+                    );
+                })}
+            </Routes>
+            </Layout>
+        </BrowserRouter>
+    );
 }
 
 export default App;

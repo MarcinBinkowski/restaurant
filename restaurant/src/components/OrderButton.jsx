@@ -1,6 +1,6 @@
 import {Button} from "react-bootstrap";
 import React from "react";
-import Navigation from "./Navigation.jsx";
+import Navigation from "../pages/Navigation.jsx";
 
 function OrderButton() {
     return(

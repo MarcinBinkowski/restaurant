@@ -1,7 +1,7 @@
 import React from 'react';
 import {Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
-import "../NavBar.css"
+import "../assets/styles/NavBar.css"
 function Navigation() {
     return (
         <Nav variant="pills" defaultActiveKey="/" className="flex-row navigation">

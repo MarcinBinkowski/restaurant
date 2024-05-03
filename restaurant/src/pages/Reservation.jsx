@@ -1,11 +1,10 @@
 import React from 'react';
-import Layout from "./Layout.jsx";
+import Layout from "../components/Layout.jsx";
 import {Button, Form} from "react-bootstrap";
 
 
 function Reservation() {
     return (
-        <Layout>
             <Form>
                 <Form.Group controlId="formName">
                     <Form.Label>Name</Form.Label>
@@ -30,7 +29,7 @@ function Reservation() {
                 <Button variant="primary" type="submit">
                     Potwierdź rezerwację
                 </Button>
-            </Form>        </Layout>
+            </Form>
     );
 }
 
