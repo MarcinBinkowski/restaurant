@@ -3,63 +3,41 @@
     justify-content: space-around;
 }
 
-.nav {
+.dropdown-navigation {
+    display: none;
+}
+
+.nav, .nav-dropdown-item {
     padding: 10px;
-    margin-left: 55%;
+    margin-left: 50%;
 }
 
-.nav-link {
-    border: 1px solid black;
-    white-space: nowrap;
-}
 
-.nav-item {
-    list-style: none;
-}
-
-.navbar-brand img {
-    height: 50px;
-    margin-right: 10px;
-}
-.nav-pills .nav-link {
-    border-radius: .25rem;
-    margin-right: 10px;
-}
-
-.nav-pills .nav-link.active {
-    background-color: #007bff;
-    color: white;
-}
-
-.nav-button {
+.dropdown-toggle {
     background-color: #f39d03;
-    color: #2a2a2a;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    margin-left: auto;
+    margin-right: 10px
 }
 
-.nav-button:hover {
-    background-color: #F0E68C;
-    color: black;
-}
-
-
-@media (max-width: 1200px) {
-    .nav-button {
+@media (max-width: 1250px) {
+    .main-button, .nav-dropdown-item, .dropdown-navigation .nav-link {
         font-size: 14px;
         padding: 8px 16px;
 
     }
+    .nav{
+        margin-left: 0;
+    }
 }
-@media (max-width: 600px) {
-    .nav-button {
-        font-size: 12px;
-        padding: 6px 12px;
 
+@media (max-width: 600px) {
+    .main-button, .nav-dropdown-item, .dropdown-navigation .nav-link {
+        padding: 4px;
+    }
+    .navigation {
+        display: none;
+    }
+    .dropdown-navigation {
+        display: flex;
     }
 }

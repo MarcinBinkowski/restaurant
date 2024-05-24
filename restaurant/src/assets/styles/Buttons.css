@@ -1,0 +1,15 @@
+.main-button {
+    background-image: url('../images/wood.webp');
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:  1000;
+    font-family: 'Amatic SC';
+    border: 3px solid black;
+
+}
+
+.main-button:hover {
+    color: black;
+}
